@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  db-ticketeria:
+    image: postgres:latest
+    container_name: TicketCleanContainer
+    environment:
+      POSTGRES_DB: TicketClean
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5432:5432"
+    restart: always
